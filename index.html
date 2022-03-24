@@ -19,6 +19,10 @@
             flex-direction: column;
          }
 
+         .list > * {
+            width: 310px;
+         }
+
          .list > * > * {
             flex-grow: 1;
             vertical-align: middle;
@@ -27,6 +31,13 @@
          .btn-primary {
             color: black;
             border-color: black;
+         }
+
+         img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: top;
          }
 
          .btn:hover,
@@ -63,8 +74,6 @@
                <div class="card">
                   <a class="card-header text-dark" data-bs-toggle="collapse" href="#faq3"> А как? </a>
                   <div class="collapse p-2" id="faq3">
-                     <div>Справочные материалы на русском <a href="https://dnd.su" target="_blank">dnd.su</a></div>
-                     <div>Детализированные принципы оптимизации <a href="https://rpgbot.net/dnd5/" target="_blank">rpgbot.net/dnd5</a></div>
                      Использованные книги правил:
                      <ul>
                         <li>PHB</li>
@@ -85,44 +94,57 @@
          <div class="text-center h4">Авантюристы</div>
          <div>Все характеристики подобраны под 3 уровень без мультиклассирования. Рекомендуется для игроков с опытом первых уровней.</div>
          <div class="row my-3 list justify-content-center">
-            <div class="col-xl-3 col-lg-4 col-md-6 col-12 text-center mb-3">
-               <a class="btn btn-primary p-2" style="background: #cdf" href="./Варвар.pdf" target="_blank">
-                  Дварф варвар с далёкого севера, всюду несущий вьюгу за собой
+            <div class="d-flex flex-column text-center mb-3">
+               <a class="btn btn-primary p-0" style="background: #cdf" href="./pdf/Варвар.pdf" target="_blank">
+                  <img src="./images/1.png" />
+                  <div class="p-2">Дварф варвар с далёкого севера, всюду несущий вьюгу за собой</div>
                </a>
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-12 text-center mb-3">
-               <a class="btn btn-primary p-2" style="background: #fcd" href="./Волшебник.pdf" target="_blank">
-                  Тифлинг волшебник, зарабатывающий деньги трюками и фокусами
+            <div class="d-flex flex-column text-center mb-3">
+               <a class="btn btn-primary p-0" style="background: #fcd" href="./pdf/Волшебник.pdf" target="_blank">
+                  <img src="./images/2.png" />
+                  <div class="p-2">Тифлинг волшебник, зарабатывающий деньги трюками и фокусами</div>
                </a>
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-12 text-center mb-3">
-               <a class="btn btn-primary p-2" style="background: #fdc" href="./Жрец.pdf" target="_blank">
-                  Драконий жрец войны в тяжёлых доспехах, вытаскивающий раненных с того света
+            <div class="d-flex flex-column text-center mb-3">
+               <a class="btn btn-primary p-0" style="background: #fdc" href="./pdf/Жрец.pdf" target="_blank">
+                  <img src="./images/3.png" />
+                  <div class="p-2">Драконий жрец войны в тяжёлых доспехах</div>
                </a>
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-12 text-center mb-3">
-               <a class="btn btn-primary p-2" style="background: #fcf" href="./Колдун.pdf" target="_blank">
-                  Священник, который после попойки с джинном научился колдовать
+            <div class="d-flex flex-column text-center mb-3">
+               <a class="btn btn-primary p-0" style="background: #fcf" href="./pdf/Колдун.pdf" target="_blank">
+                  <img src="./images/4.png" />
+                  <div class="p-2">Священник, который после попойки с джинном научился колдовать</div>
                </a>
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-12 text-center mb-3">
-               <a class="btn btn-primary p-2" style="background: #ffc" href="./Монах.pdf" target="_blank">
-                  Скромный табакси монах, что одной лапкой лечит, другою калечит
+            <div class="d-flex flex-column text-center mb-3">
+               <a class="btn btn-primary p-0" style="background: #ffc" href="./pdf/Монах.pdf" target="_blank">
+                  <img src="./images/5.png" />
+                  <div class="p-2">Монах семейства кошачих, что одной лапкой лечит, другою калечит</div>
                </a>
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-12 text-center mb-3">
-               <a class="btn btn-primary p-2" style="background: #dcd" href="./Паладин.pdf" target="_blank">Тёмный эльф рыцарь, видящий невидимое</a>
+            <div class="d-flex flex-column text-center mb-3">
+               <a class="btn btn-primary p-0" style="background: #dcd" href="./pdf/Паладин.pdf" target="_blank">
+                  <img src="./images/6.png" />
+                  <div class="p-2">Тёмный эльф рыцарь, видящий невидимое</div>
+               </a>
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-12 text-center mb-3">
-               <a class="btn btn-primary p-2" style="background: #fec" href="./Чародей.pdf" target="_blank">
-                  Чародей четырёх стихий из благородного рода полуэльфов
+            <div class="d-flex flex-column text-center mb-3">
+               <a class="btn btn-primary p-0" style="background: #fec" href="./pdf/Чародей.pdf" target="_blank">
+                  <img src="./images/7.png" />
+                  <div class="p-2">Чародей четырёх стихий из благородного рода полуэльфов</div>
                </a>
             </div>
          </div>
       </div>
       <div class="text-end border-top alert-secondary">
-         <div class="container">
-            <div class="p-2">made by AndrejevVE</div>
+         <div class="container d-flex flex-wrap py-2">
+            <div class="px-2">Справочные материалы на русском <a href="https://dnd.su" target="_blank">dnd.su</a></div>
+            <div class="px-2 me-auto">
+               Детализированные принципы оптимизации <a href="https://rpgbot.net/dnd5/" target="_blank">rpgbot.net/dnd5</a>
+            </div>
+            <div class="px-2">made by AndrejevVE</div>
          </div>
       </div>
       <script
