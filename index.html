@@ -29,12 +29,12 @@
             flex-direction: column;
          }
 
-         .list > * > * {
+         .list > * > a {
             flex-grow: 1;
             vertical-align: middle;
          }
 
-         .btn-primary {
+         .btn-dark {
             color: black;
             border-color: black;
          }
@@ -63,6 +63,21 @@
          .btn:focus {
             color: black;
             filter: brightness(0.95);
+         }
+
+         a.btn {
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+         }
+
+         .bottom-part {
+            border-left: solid 1px #000;
+            border-right: solid 1px #000;
+            border-bottom: solid 1px #000;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
          }
       </style>
    </head>
@@ -114,153 +129,153 @@
          <div>Все характеристики подобраны под <b>3</b> уровень без мультиклассирования. Рекомендуется для игроков с опытом первых уровней.</div>
          <div class="row my-3 list justify-content-center">
             <div class="d-flex flex-column text-center mb-3">
-               <a class="btn btn-primary p-0" style="background: #cdf" href="./pdf/Варвар.pdf" target="_blank">
+               <a class="btn btn-dark p-0" style="background: #cdf" href="./pdf/Варвар.pdf" target="_blank">
                   <h5>Ульф Ледяная Борода</h5>
                   <img src="./images/1.jpg" />
                   <div class="p-2 m-auto">Дварф варвар с далёкого севера, всюду несущий вьюгу за собой</div>
-                  <div class="text-center border-top border-dark">
-                     <img src="./svg/heart.svg" class="icon" data-bs-toggle="tooltip" title="Высокое здоровье" />
-                     <img src="./svg/sword.svg" class="icon" data-bs-toggle="tooltip" title="Высокий урон" />
-                     <img src="./svg/slow.svg" class="icon" data-bs-toggle="tooltip" title="Низкая скорость" />
-                  </div>
                </a>
+               <div class="text-center bottom-part" style="background: #cdf">
+                  <img src="./svg/heart.svg" class="icon" data-bs-toggle="tooltip" title="Высокое здоровье" />
+                  <img src="./svg/sword.svg" class="icon" data-bs-toggle="tooltip" title="Высокий урон" />
+                  <img src="./svg/slow.svg" class="icon" data-bs-toggle="tooltip" title="Низкая скорость" />
+               </div>
             </div>
             <div class="d-flex flex-column text-center mb-3">
-               <a class="btn btn-primary p-0" style="background: #fcd" href="./pdf/Волшебник.pdf" target="_blank">
+               <a class="btn btn-dark p-0" style="background: #fcd" href="./pdf/Волшебник.pdf" target="_blank">
                   <h5>Аробаз</h5>
                   <img src="./images/2.jpg" />
                   <div class="p-2 m-auto">Тифлинг волшебник, зарабатывающий деньги трюками и фокусами</div>
-                  <div class="text-center border-top border-dark">
-                     <img src="./svg/magic.svg" class="icon" data-bs-toggle="tooltip" title="Множество заклинаний" />
-                     <img src="./svg/swap.svg" class="icon" data-bs-toggle="tooltip" title="Меняемые заклинания" />
-                     <img src="./svg/weak.svg" class="icon" data-bs-toggle="tooltip" title="Низкая защита" />
-                  </div>
                </a>
+               <div class="text-center bottom-part" style="background: #fcd">
+                  <img src="./svg/magic.svg" class="icon" data-bs-toggle="tooltip" title="Множество заклинаний" />
+                  <img src="./svg/swap.svg" class="icon" data-bs-toggle="tooltip" title="Меняемые заклинания" />
+                  <img src="./svg/weak.svg" class="icon" data-bs-toggle="tooltip" title="Низкая защита" />
+               </div>
             </div>
             <div class="d-flex flex-column text-center mb-3">
-               <a class="btn btn-primary p-0" style="background: #fdc" href="./pdf/Жрец.pdf" target="_blank">
+               <a class="btn btn-dark p-0" style="background: #fdc" href="./pdf/Жрец.pdf" target="_blank">
                   <h5>Крив Ло Тар</h5>
                   <img src="./images/3.jpg" />
                   <div class="p-2 m-auto">Драконий жрец войны в тяжёлых доспехах</div>
-                  <div class="text-center border-top border-dark">
-                     <img src="./svg/magic.svg" class="icon" data-bs-toggle="tooltip" title="Множество заклинаний" />
-                     <img src="./svg/swap.svg" class="icon" data-bs-toggle="tooltip" title="Меняемые заклинания" />
-                     <img src="./svg/armor.svg" class="icon" data-bs-toggle="tooltip" title="Высокая защита" />
-                     <img src="./svg/heal.svg" class="icon" data-bs-toggle="tooltip" title="Умеет лечить" />
-                  </div>
                </a>
+               <div class="text-center bottom-part" style="background: #fdc">
+                  <img src="./svg/magic.svg" class="icon" data-bs-toggle="tooltip" title="Множество заклинаний" />
+                  <img src="./svg/swap.svg" class="icon" data-bs-toggle="tooltip" title="Меняемые заклинания" />
+                  <img src="./svg/armor.svg" class="icon" data-bs-toggle="tooltip" title="Высокая защита" />
+                  <img src="./svg/heal.svg" class="icon" data-bs-toggle="tooltip" title="Умеет лечить" />
+               </div>
             </div>
             <div class="d-flex flex-column text-center mb-3">
-               <a class="btn btn-primary p-0" style="background: #fcf" href="./pdf/Колдун.pdf" target="_blank">
+               <a class="btn btn-dark p-0" style="background: #fcf" href="./pdf/Колдун.pdf" target="_blank">
                   <h5>Петро Бьон</h5>
                   <img src="./images/4.jpg" />
                   <div class="p-2 m-auto">Священник, который после попойки с джинном научился колдовать</div>
-                  <div class="text-center border-top border-dark">
-                     <img src="./svg/magic.svg" class="icon" data-bs-toggle="tooltip" title="Множество заклинаний" />
-                     <img src="./svg/weak.svg" class="icon" data-bs-toggle="tooltip" title="Низкая защита" />
-                     <img src="./svg/sword.svg" class="icon" data-bs-toggle="tooltip" title="Высокий урон" />
-                  </div>
                </a>
+               <div class="text-center bottom-part" style="background: #fcf">
+                  <img src="./svg/magic.svg" class="icon" data-bs-toggle="tooltip" title="Множество заклинаний" />
+                  <img src="./svg/weak.svg" class="icon" data-bs-toggle="tooltip" title="Низкая защита" />
+                  <img src="./svg/sword.svg" class="icon" data-bs-toggle="tooltip" title="Высокий урон" />
+               </div>
             </div>
             <div class="d-flex flex-column text-center mb-3">
-               <a class="btn btn-primary p-0" style="background: #ffc" href="./pdf/Монах.pdf" target="_blank">
+               <a class="btn btn-dark p-0" style="background: #ffc" href="./pdf/Монах.pdf" target="_blank">
                   <h5>Мягкая лапа</h5>
                   <img src="./images/5.jpg" />
                   <div class="p-2 m-auto">Монах семейства кошачих, что одной лапкой лечит, другою калечит</div>
-                  <div class="text-center border-top border-dark">
-                     <img src="./svg/big-list.svg" class="icon" data-bs-toggle="tooltip" title="Множество навыков" />
-                     <img src="./svg/heal.svg" class="icon" data-bs-toggle="tooltip" title="Умеет лечить" />
-                     <img src="./svg/fast.svg" class="icon" data-bs-toggle="tooltip" title="Высокая скорость" />
-                  </div>
                </a>
+               <div class="text-center bottom-part" style="background: #ffc">
+                  <img src="./svg/big-list.svg" class="icon" data-bs-toggle="tooltip" title="Множество навыков" />
+                  <img src="./svg/heal.svg" class="icon" data-bs-toggle="tooltip" title="Умеет лечить" />
+                  <img src="./svg/fast.svg" class="icon" data-bs-toggle="tooltip" title="Высокая скорость" />
+               </div>
             </div>
             <div class="d-flex flex-column text-center mb-3">
-               <a class="btn btn-primary p-0" style="background: #dcd" href="./pdf/Паладин.pdf" target="_blank">
+               <a class="btn btn-dark p-0" style="background: #dcd" href="./pdf/Паладин.pdf" target="_blank">
                   <h5>Араннис III</h5>
                   <img src="./images/6.jpg" />
                   <div class="p-2 m-auto">Тёмный эльф рыцарь, видящий невидимое</div>
-                  <div class="text-center border-top border-dark">
-                     <img src="./svg/heart.svg" class="icon" data-bs-toggle="tooltip" title="Высокое здоровье" />
-                     <img src="./svg/some-magic.svg" class="icon" data-bs-toggle="tooltip" title="Немного заклинаний" />
-                     <img src="./svg/swap.svg" class="icon" data-bs-toggle="tooltip" title="Меняемые заклинания" />
-                     <img src="./svg/armor.svg" class="icon" data-bs-toggle="tooltip" title="Высокая защита" />
-                     <img src="./svg/heal.svg" class="icon" data-bs-toggle="tooltip" title="Умеет лечить" />
-                  </div>
                </a>
+               <div class="text-center bottom-part" style="background: #dcd">
+                  <img src="./svg/heart.svg" class="icon" data-bs-toggle="tooltip" title="Высокое здоровье" />
+                  <img src="./svg/some-magic.svg" class="icon" data-bs-toggle="tooltip" title="Немного заклинаний" />
+                  <img src="./svg/swap.svg" class="icon" data-bs-toggle="tooltip" title="Меняемые заклинания" />
+                  <img src="./svg/armor.svg" class="icon" data-bs-toggle="tooltip" title="Высокая защита" />
+                  <img src="./svg/heal.svg" class="icon" data-bs-toggle="tooltip" title="Умеет лечить" />
+               </div>
             </div>
             <div class="d-flex flex-column text-center mb-3">
-               <a class="btn btn-primary p-0" style="background: #fec" href="./pdf/Чародей.pdf" target="_blank">
+               <a class="btn btn-dark p-0" style="background: #fec" href="./pdf/Чародей.pdf" target="_blank">
                   <h5>Иммераль Вествуд</h5>
                   <img src="./images/7.jpg" />
                   <div class="p-2 m-auto">Чародей четырёх стихий из благородного рода полуэльфов</div>
-                  <div class="text-center border-top border-dark">
-                     <img src="./svg/magic.svg" class="icon" data-bs-toggle="tooltip" title="Множество заклинаний" />
-                     <img src="./svg/weak.svg" class="icon" data-bs-toggle="tooltip" title="Низкая защита" />
-                     <img src="./svg/sword.svg" class="icon" data-bs-toggle="tooltip" title="Высокий урон" />
-                  </div>
                </a>
+               <div class="text-center bottom-part" style="background: #fec">
+                  <img src="./svg/magic.svg" class="icon" data-bs-toggle="tooltip" title="Множество заклинаний" />
+                  <img src="./svg/weak.svg" class="icon" data-bs-toggle="tooltip" title="Низкая защита" />
+                  <img src="./svg/sword.svg" class="icon" data-bs-toggle="tooltip" title="Высокий урон" />
+               </div>
             </div>
             <div class="d-flex flex-column text-center mb-3">
-               <a class="btn btn-primary p-0" style="background: #aca" href="./pdf/Воин.pdf" target="_blank">
+               <a class="btn btn-dark p-0" style="background: #aca" href="./pdf/Воин.pdf" target="_blank">
                   <h5>Муррен Бык</h5>
                   <img src="./images/8.jpg" />
                   <div class="p-2 m-auto">Полуорк наёмник, повидавший за короткую жизнь не одну большую войну</div>
-                  <div class="text-center border-top border-dark">
-                     <img src="./svg/heart.svg" class="icon" data-bs-toggle="tooltip" title="Высокое здоровье" />
-                     <img src="./svg/armor.svg" class="icon" data-bs-toggle="tooltip" title="Высокая защита" />
-                     <img src="./svg/sword.svg" class="icon" data-bs-toggle="tooltip" title="Высокий урон" />
-                  </div>
                </a>
+               <div class="text-center bottom-part" style="background: #aca">
+                  <img src="./svg/heart.svg" class="icon" data-bs-toggle="tooltip" title="Высокое здоровье" />
+                  <img src="./svg/armor.svg" class="icon" data-bs-toggle="tooltip" title="Высокая защита" />
+                  <img src="./svg/sword.svg" class="icon" data-bs-toggle="tooltip" title="Высокий урон" />
+               </div>
             </div>
             <div class="d-flex flex-column text-center mb-3">
-               <a class="btn btn-primary p-0" style="background: #caf" href="./pdf/Бард.pdf" target="_blank">
+               <a class="btn btn-dark p-0" style="background: #caf" href="./pdf/Бард.pdf" target="_blank">
                   <h5>Джинни Попс</h5>
                   <img src="./images/9.jpg" />
                   <div class="p-2 m-auto">Полурослик бард, выступающий в каждой таверне</div>
-                  <div class="text-center border-top border-dark">
-                     <img src="./svg/big-list.svg" class="icon" data-bs-toggle="tooltip" title="Множество навыков" />
-                     <img src="./svg/magic.svg" class="icon" data-bs-toggle="tooltip" title="Множество заклинаний" />
-                     <img src="./svg/slow.svg" class="icon" data-bs-toggle="tooltip" title="Низкая скорость" />
-                  </div>
                </a>
+               <div class="text-center bottom-part" style="background: #caf">
+                  <img src="./svg/big-list.svg" class="icon" data-bs-toggle="tooltip" title="Множество навыков" />
+                  <img src="./svg/magic.svg" class="icon" data-bs-toggle="tooltip" title="Множество заклинаний" />
+                  <img src="./svg/slow.svg" class="icon" data-bs-toggle="tooltip" title="Низкая скорость" />
+               </div>
             </div>
             <div class="d-flex flex-column text-center mb-3">
-               <a class="btn btn-primary p-0" style="background: #cca" href="./pdf/Следопыт.pdf" target="_blank">
+               <a class="btn btn-dark p-0" style="background: #cca" href="./pdf/Следопыт.pdf" target="_blank">
                   <h5>Игги</h5>
                   <img src="./images/10.jpg" />
                   <div class="p-2 m-auto">Гоблин следопыт, путешествующий всю свою жизнь</div>
-                  <div class="text-center border-top border-dark">
-                     <img src="./svg/heart.svg" class="icon" data-bs-toggle="tooltip" title="Высокое здоровье" />
-                     <img src="./svg/sword.svg" class="icon" data-bs-toggle="tooltip" title="Высокий урон" />
-                     <img src="./svg/big-list.svg" class="icon" data-bs-toggle="tooltip" title="Множество навыков" />
-                     <img src="./svg/some-magic.svg" class="icon" data-bs-toggle="tooltip" title="Немного заклинаний" />
-                  </div>
                </a>
+               <div class="text-center bottom-part" style="background: #cca">
+                  <img src="./svg/heart.svg" class="icon" data-bs-toggle="tooltip" title="Высокое здоровье" />
+                  <img src="./svg/sword.svg" class="icon" data-bs-toggle="tooltip" title="Высокий урон" />
+                  <img src="./svg/big-list.svg" class="icon" data-bs-toggle="tooltip" title="Множество навыков" />
+                  <img src="./svg/some-magic.svg" class="icon" data-bs-toggle="tooltip" title="Немного заклинаний" />
+               </div>
             </div>
             <div class="d-flex flex-column text-center mb-3">
-               <a class="btn btn-primary p-0" style="background: #bbb" href="./pdf/Плут.pdf" target="_blank">
+               <a class="btn btn-dark p-0" style="background: #bbb" href="./pdf/Плут.pdf" target="_blank">
                   <h5>Билли Ключник</h5>
                   <img src="./images/11.jpg" />
                   <div class="p-2 m-auto">Гном плут, способный вскрыть любой замок</div>
-                  <div class="text-center border-top border-dark">
-                     <img src="./svg/big-list.svg" class="icon" data-bs-toggle="tooltip" title="Множество навыков" />
-                     <img src="./svg/some-magic.svg" class="icon" data-bs-toggle="tooltip" title="Немного заклинаний" />
-                     <img src="./svg/sword.svg" class="icon" data-bs-toggle="tooltip" title="Высокий урон" />
-                     <img src="./svg/slow.svg" class="icon" data-bs-toggle="tooltip" title="Низкая скорость" />
-                  </div>
                </a>
+               <div class="text-center bottom-part" style="background: #bbb">
+                  <img src="./svg/big-list.svg" class="icon" data-bs-toggle="tooltip" title="Множество навыков" />
+                  <img src="./svg/some-magic.svg" class="icon" data-bs-toggle="tooltip" title="Немного заклинаний" />
+                  <img src="./svg/sword.svg" class="icon" data-bs-toggle="tooltip" title="Высокий урон" />
+                  <img src="./svg/slow.svg" class="icon" data-bs-toggle="tooltip" title="Низкая скорость" />
+               </div>
             </div>
             <div class="d-flex flex-column text-center mb-3">
-               <a class="btn btn-primary p-0" style="background: #adc" href="./pdf/Друид.pdf" target="_blank">
+               <a class="btn btn-dark p-0" style="background: #adc" href="./pdf/Друид.pdf" target="_blank">
                   <h5>Валь</h5>
                   <img src="./images/12.jpg" />
                   <div class="p-2 m-auto">Фирболг друид - молчаливый хранитель необжитых земель</div>
-                  <div class="text-center border-top border-dark">
-                     <img src="./svg/magic.svg" class="icon" data-bs-toggle="tooltip" title="Множество заклинаний" />
-                     <img src="./svg/swap.svg" class="icon" data-bs-toggle="tooltip" title="Меняемые заклинания" />
-                     <img src="./svg/heal.svg" class="icon" data-bs-toggle="tooltip" title="Умеет лечить" />
-                  </div>
                </a>
+               <div class="text-center bottom-part" style="background: #adc">
+                  <img src="./svg/magic.svg" class="icon" data-bs-toggle="tooltip" title="Множество заклинаний" />
+                  <img src="./svg/swap.svg" class="icon" data-bs-toggle="tooltip" title="Меняемые заклинания" />
+                  <img src="./svg/heal.svg" class="icon" data-bs-toggle="tooltip" title="Умеет лечить" />
+               </div>
             </div>
          </div>
          <div>Справочные материалы на русском языке <a href="https://dnd.su" target="_blank">dnd.su</a></div>
