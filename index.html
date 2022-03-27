@@ -20,7 +20,13 @@
          }
 
          .list > * {
-            width: 310px;
+            min-width: 310px;
+            max-width: 25%;
+         }
+
+         .list .btn {
+            display: flex;
+            flex-direction: column;
          }
 
          .list > * > * {
@@ -35,9 +41,11 @@
 
          img {
             width: 100%;
-            height: 300px;
+            height: 320px;
             object-fit: cover;
             object-position: top;
+            border-top: solid 1px black;
+            border-bottom: solid 1px black;
          }
 
          h5 {
@@ -102,56 +110,84 @@
                <a class="btn btn-primary p-0" style="background: #cdf" href="./pdf/Варвар.pdf" target="_blank">
                   <h5>Ульф Ледяная Борода</h5>
                   <img src="./images/1.jpg" />
-                  <div class="p-2">Дварф варвар с далёкого севера, всюду несущий вьюгу за собой</div>
+                  <div class="p-2 m-auto">Дварф варвар с далёкого севера, всюду несущий вьюгу за собой</div>
                </a>
             </div>
             <div class="d-flex flex-column text-center mb-3">
                <a class="btn btn-primary p-0" style="background: #fcd" href="./pdf/Волшебник.pdf" target="_blank">
                   <h5>Аробаз</h5>
                   <img src="./images/2.jpg" />
-                  <div class="p-2">Тифлинг волшебник, зарабатывающий деньги трюками и фокусами</div>
+                  <div class="p-2 m-auto">Тифлинг волшебник, зарабатывающий деньги трюками и фокусами</div>
                </a>
             </div>
             <div class="d-flex flex-column text-center mb-3">
                <a class="btn btn-primary p-0" style="background: #fdc" href="./pdf/Жрец.pdf" target="_blank">
                   <h5>Крив Ло Тар</h5>
                   <img src="./images/3.jpg" />
-                  <div class="p-2">Драконий жрец войны в тяжёлых доспехах</div>
+                  <div class="p-2 m-auto">Драконий жрец войны в тяжёлых доспехах</div>
                </a>
             </div>
             <div class="d-flex flex-column text-center mb-3">
                <a class="btn btn-primary p-0" style="background: #fcf" href="./pdf/Колдун.pdf" target="_blank">
                   <h5>Петро Бьон</h5>
                   <img src="./images/4.jpg" />
-                  <div class="p-2">Священник, который после попойки с джинном научился колдовать</div>
+                  <div class="p-2 m-auto">Священник, который после попойки с джинном научился колдовать</div>
                </a>
             </div>
             <div class="d-flex flex-column text-center mb-3">
                <a class="btn btn-primary p-0" style="background: #ffc" href="./pdf/Монах.pdf" target="_blank">
                   <h5>Мягкая лапа</h5>
                   <img src="./images/5.jpg" />
-                  <div class="p-2">Монах семейства кошачих, что одной лапкой лечит, другою калечит</div>
+                  <div class="p-2 m-auto">Монах семейства кошачих, что одной лапкой лечит, другою калечит</div>
                </a>
             </div>
             <div class="d-flex flex-column text-center mb-3">
                <a class="btn btn-primary p-0" style="background: #dcd" href="./pdf/Паладин.pdf" target="_blank">
                   <h5>Араннис III</h5>
                   <img src="./images/6.jpg" />
-                  <div class="p-2">Тёмный эльф рыцарь, видящий невидимое</div>
+                  <div class="p-2 m-auto">Тёмный эльф рыцарь, видящий невидимое</div>
                </a>
             </div>
             <div class="d-flex flex-column text-center mb-3">
                <a class="btn btn-primary p-0" style="background: #fec" href="./pdf/Чародей.pdf" target="_blank">
                   <h5>Иммераль Вествуд</h5>
                   <img src="./images/7.jpg" />
-                  <div class="p-2">Чародей четырёх стихий из благородного рода полуэльфов</div>
+                  <div class="p-2 m-auto">Чародей четырёх стихий из благородного рода полуэльфов</div>
                </a>
             </div>
             <div class="d-flex flex-column text-center mb-3">
                <a class="btn btn-primary p-0" style="background: #aca" href="./pdf/Воин.pdf" target="_blank">
                   <h5>Муррен Бык</h5>
                   <img src="./images/8.jpg" />
-                  <div class="p-2">Полуорк наёмник, повидавший за короткую жизнь не одну большую войну</div>
+                  <div class="p-2 m-auto">Полуорк наёмник, повидавший за короткую жизнь не одну большую войну</div>
+               </a>
+            </div>
+            <div class="d-flex flex-column text-center mb-3">
+               <a class="btn btn-primary p-0" style="background: #caf" href="./pdf/Бард.pdf" target="_blank">
+                  <h5>Джинни Попс</h5>
+                  <img src="./images/9.jpg" />
+                  <div class="p-2 m-auto">Полурослик бард, выступающий в каждой таверне</div>
+               </a>
+            </div>
+            <div class="d-flex flex-column text-center mb-3">
+               <a class="btn btn-primary p-0" style="background: #cca" href="./pdf/Следопыт.pdf" target="_blank">
+                  <h5>Игги</h5>
+                  <img src="./images/10.jpg" />
+                  <div class="p-2 m-auto">Гоблин следопыт, путешествующий всю свою жизнь</div>
+               </a>
+            </div>
+            <div class="d-flex flex-column text-center mb-3">
+               <a class="btn btn-primary p-0" style="background: #bbb" href="./pdf/Плут.pdf" target="_blank">
+                  <h5>Билли Ключник</h5>
+                  <img src="./images/11.jpg" />
+                  <div class="p-2 m-auto">Гном плут, способный вскрыть любой замок</div>
+               </a>
+            </div>
+            <div class="d-flex flex-column text-center mb-3">
+               <a class="btn btn-primary p-0" style="background: #adc" href="./pdf/Друид.pdf" target="_blank">
+                  <h5>Валь</h5>
+                  <img src="./images/12.jpg" />
+                  <div class="p-2 m-auto">Фирболг друид - молчаливый хранитель необжитых земель</div>
                </a>
             </div>
          </div>
